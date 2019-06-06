@@ -1,10 +1,8 @@
 <div id = "available">
 <ul>
-
-{{#each tacos}}
-  <p>Name: {{taco_type}}</p>
-  <p>Shell: {{shell_type}}</p>
-{{/each}}
+    {{#each tacos}} {{#unless this.delivered}}
+    <li>
+        {{this.id}}. {{this.taco_type}}
 
         <form action="/{{this.id}}?_method=PUT" method="POST">
             <input type="hidden" name="picked_up" value="false">
