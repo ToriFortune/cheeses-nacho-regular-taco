@@ -1,4 +1,47 @@
+<div id = "available">
+<ul>
+
 {{#each tacos}}
   <p>Name: {{taco_type}}</p>
   <p>Shell: {{shell_type}}</p>
 {{/each}}
+
+        <form action="/{{this.id}}?_method=PUT" method="POST">
+            <input type="hidden" name="picked_up" value="false">
+            <button class="btn btn-warning" type="submit">Taco Delivered.</button>
+        </form>
+
+    </li>
+    {{/unless}} {{/each}}
+</ul>
+</div>
+
+<h2>Bulld yourself a taco</h2>
+<form class="create-form">
+
+    <div class="form-group">
+        <label for="ta">Taco:</label>
+        <input type="text" id="ta" name="taco_type">
+    </div>
+
+    <button type="submit">Done!</button>Build me a taco!</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
