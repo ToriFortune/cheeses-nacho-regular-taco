@@ -9,7 +9,7 @@
             "request": "launch",
             "name": "Server",
             "program": "${workspaceFolder}\\server.js",
-            "env": {"SQL_PASSWORD": "LovinTR0"}
+            "env": {"SQL_PASSWORD": "LovinTR0", "JAWSDB_URL": "mysql://r1qyte90egk379fl:nlp5tr015w0g6o8o@a07yd3a6okcidwap.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/jwadvv60la0aaqpo"}
         },
         {
             "type": "node",
