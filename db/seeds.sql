@@ -1,4 +1,4 @@
- use tacosDB;
+ use tacos_db;
      INSERT INTO tacos (taco_type, shell_type, meat_type, delivered)
 VALUES 
 ("Naan Taco", "hard", false, false),
